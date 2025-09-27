@@ -1,0 +1,28 @@
+{
+  "name": "universal-template",
+  "version": "1.0.0",
+  "description": "Universal full-stack template with React frontend and TypeScript backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "backend:build": "cd backend && npm run build",
+    "frontend:install": "cd frontend && npm install",
+    "backend:install": "cd backend && npm install",
+    "install:all": "npm install && npm run frontend:install && npm run backend:install"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "express",
+    "template",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
